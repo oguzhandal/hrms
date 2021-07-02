@@ -1,0 +1,5 @@
+package proje.hrms.entities.concretes;
+
+public class Employee {
+
+}

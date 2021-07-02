@@ -18,9 +18,9 @@ public class JobTitleManager implements JobTitleService {
         super();
         this.jobTitleDao = jobTitleDao;
     }
-
     @Override
     public List<JobTitle> getAll() {
         return jobTitleDao.findAll();
     }
+
 }

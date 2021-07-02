@@ -1,0 +1,19 @@
+package proje.hrms.core.Utilities.adapters.abstracts;
+
+public class Result {
+private boolean success;
+private String message;
+
+public Result(boolean success) {
+	super();
+	this.success = success;
+}
+
+public Result(boolean success, String message) {
+	super();
+	this(success);
+	this.message = message;
+}
+
+
+}

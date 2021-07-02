@@ -1,0 +1,5 @@
+package proje.hrms.Verification.concrete;
+
+public class HrmsCheckManager {
+
+}

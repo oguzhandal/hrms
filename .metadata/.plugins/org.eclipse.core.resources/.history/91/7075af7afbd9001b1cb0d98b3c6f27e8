@@ -1,0 +1,10 @@
+package proje.hrms.core.Utilities.adapters.abstracts;
+
+public class DataResult extends Result {
+	private T data;
+
+	public T getData() {
+		return data;
+	}
+
+}

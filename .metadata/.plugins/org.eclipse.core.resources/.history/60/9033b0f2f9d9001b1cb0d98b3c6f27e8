@@ -1,0 +1,5 @@
+package proje.hrms.core.Utilities.adapters.abstracts;
+
+public class Result {
+
+}

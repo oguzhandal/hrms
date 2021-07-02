@@ -1,0 +1,21 @@
+package proje.hrms.core;
+
+public class SuccessDataResult<T> extends DataResult {
+
+	@SuppressWarnings("unchecked")
+	public SuccessDataResult(T data, String message) {
+		super(data, true, message);
+	}
+	@SuppressWarnings("unchecked")
+	public SuccessDataResult(T data) {
+		super(data, true);
+	}
+	@SuppressWarnings("unchecked")
+	public SuccessDataResult(String message) {
+		super(null, true, message);
+	}
+	@SuppressWarnings("unchecked")
+	public SuccessDataResult() {
+		super(null, true);
+	}
+}

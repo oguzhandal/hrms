@@ -1,0 +1,7 @@
+package proje.hrms.core.Utulities.adapters.abstracts;
+
+public interface VerificationCodeService {
+	void sendVerificationLink(String email);
+
+    String sendCode();
+}

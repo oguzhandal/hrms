@@ -1,0 +1,10 @@
+package proje.hrms.core.Utilities.adapters.abstracts;
+
+public class SuccessResult extends Result {
+
+	public SuccessResult(boolean success) {
+		super(success);
+		// TODO Auto-generated constructor stub
+	}
+
+}

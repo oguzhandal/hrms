@@ -1,0 +1,11 @@
+package proje.hrms.dataAccess.abstracts;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import proje.hrms.entities.concretes.User;
+
+import java.util.List;
+
+
+public Inter UserDao extends JpaRepository<User,Integer>{
+
+}

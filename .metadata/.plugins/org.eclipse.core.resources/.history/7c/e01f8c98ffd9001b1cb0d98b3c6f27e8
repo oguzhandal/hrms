@@ -1,0 +1,64 @@
+package proje.hrms.business.concretes;
+
+import java.util.List;
+
+import proje.hrms.business.abstracts.EmployerService;
+import proje.hrms.core.DataResult;
+import proje.hrms.core.ErrorResult;
+import proje.hrms.core.Result;
+import proje.hrms.core.SuccessDataResult;
+import proje.hrms.core.SuccessResult;
+import proje.hrms.core.Utilities.adapters.abstracts.MailCheckService;
+import proje.hrms.core.Utilities.adapters.abstracts.VerificationCodeService;
+import proje.hrms.dataAccess.abstracts.EmployerDao;
+import proje.hrms.entities.concretes.Employer;
+
+public class EmployerManager implements EmployerService {
+	private EmployerDao employerDao1;
+	private MailCheckService mailCheckService;
+	private VerificationCodeService verificationCodeService;
+
+	public EmployerManager(EmployerDao employerDao, MailCheckService mailCheckService,
+			VerificationCodeService verificationCodeService) {
+		this.employerDao = employerDao;
+		this.mailCheckService = mailCheckService;
+		this.verificationCodeService = verificationCodeService;
+	}
+
+	@Override
+	public DataResult<List<Employer>> getAll() {
+        return new SuccessDataResult<List<Employer>>(this.employerDao.findAll(),"iş verenler listelendi");
+	}
+
+	@Override
+	public DataResult<Employer> getByEmail(String email) {
+		// TODO Auto-generated method stub
+        return new SuccessDataResult<Employer>(this.employerDao.findByEmail(email));
+	}
+
+	@Override
+	public Result add(Employer employer) {
+		var domain = employer.getEmail().split("@")[1];
+        var result = employer.getWebAddress().equals(domain);
+        if (employer.getWebAddress() == null || employer.getCompanyName() == null || employer.getPhoneNumber() == null
+                || employer.getEmail() == null || employer.getPassword() == null) {
+            return new ErrorResult("Lütfen bütün alanları doldurunuz");
+
+        } else if (checkEmail(employer.getEmail())) {
+            return new ErrorResult("Girilen Email kullanılmamaktadır");
+        } else if (!result) {
+            return new ErrorResult("Email adresi ile web site uyuşmuyor. Lütfen kontrol ediniz");
+        }
+        //mailCheckService.checkEmail(employer.getEmail());
+        this.employerDao.save(employer);
+        this.verificationCodeService.sendCode();
+        return new SuccessResult("İş veren başarılı bir şekilde eklendi");
+	}
+	private boolean checkEmail(String email) {
+        if (this.employerDao.findByEmail(email) == null) {
+            return true;
+        }
+        return false;
+    }
+
+}

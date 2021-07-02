@@ -1,0 +1,5 @@
+package proje.hrms.dataAccess.abstracts;
+
+public interface EmployeeDao {
+
+}

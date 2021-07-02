@@ -1,0 +1,13 @@
+package proje.hrms.Menris;
+
+import proje.hrms.entities.concretes.Candidate;
+
+public class MernisCheckService {
+    public boolean checkIfRealPerson(Candidate candidate) {
+
+        if (candidate.getIdentityNumber().length() <= 11) {
+            return false;
+        }
+        return true;
+    }
+}

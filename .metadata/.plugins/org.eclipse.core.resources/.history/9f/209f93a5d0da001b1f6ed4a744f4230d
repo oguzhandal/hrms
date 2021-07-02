@@ -1,0 +1,6 @@
+package proje.hrms.core.Utulities.adapters.abstracts;
+
+public interface MailCheckService {
+    public boolean checkEmail(String email);
+
+}

@@ -1,0 +1,16 @@
+package proje.hrms.Verification.concrete;
+
+import org.springframework.stereotype.Service;
+
+import proje.hrms.entities.concretes.User;
+import proje.hrms.verification.abstracts.MernisCheckService;
+
+@Service
+public class MernisCheckManager implements MernisCheckService{
+
+	@Override
+	public boolean checkIfRealPerson(User user) {
+ 		return true;
+	}
+
+}

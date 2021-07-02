@@ -1,0 +1,8 @@
+package proje.hrms.Verification.abstracts;
+
+import proje.hrms.entities.concretes.User;
+
+public interface MernisCheckService {
+	boolean checkIfRealPerson(User user);
+
+}

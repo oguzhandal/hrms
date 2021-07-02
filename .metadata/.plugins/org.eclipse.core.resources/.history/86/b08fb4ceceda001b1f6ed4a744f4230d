@@ -1,0 +1,8 @@
+package proje.hrms.Verification.concrete;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailCheckManager {
+
+}

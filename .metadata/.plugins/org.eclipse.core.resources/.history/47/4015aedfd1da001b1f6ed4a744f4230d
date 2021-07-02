@@ -1,0 +1,30 @@
+package proje.hrms.business.concretes;
+
+import java.util.List;
+
+import proje.hrms.business.abstracts.UserService;
+import proje.hrms.core.utilities.result.DataResult;
+import proje.hrms.core.utilities.result.Result;
+import proje.hrms.entities.concretes.User;
+
+public class UserManager implements UserService{
+
+	@Override
+	public DataResult<List<User>> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<User> getByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result add(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

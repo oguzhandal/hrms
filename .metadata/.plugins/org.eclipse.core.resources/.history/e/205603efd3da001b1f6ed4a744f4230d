@@ -1,0 +1,16 @@
+package proje.hrms.Verification.concrete;
+
+import org.springframework.stereotype.Service;
+
+import proje.hrms.Verification.abstracts.EmailCheckService;
+import proje.hrms.entities.concretes.User;
+
+@Service
+public class EmailCheckManager implements EmailCheckService {
+
+	@Override
+	public boolean checkIfRealEmail(User user) {
+		return true;
+	}
+
+}

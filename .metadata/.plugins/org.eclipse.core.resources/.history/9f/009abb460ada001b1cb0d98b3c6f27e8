@@ -1,0 +1,32 @@
+package proje.hrms.api.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import proje.hrms.business.abstracts.EmployeeService;
+import proje.hrms.core.DataResult;
+import proje.hrms.core.Result;
+import proje.hrms.entities.concretes.Employee;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(name = "/api/employees")
+
+public class EmployeesController {
+    private EmployeeService employeeService;
+
+    @Autowired
+    public EmployeesController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    @GetMapping("/getall")
+    public DataResult<List<Employee>> getall() {
+        return this.employeeService.getAll();
+    }
+
+    @PostMapping("/add")
+    public Result add(@RequestBody Employee employee) {
+        return this.employeeService.add(employee);
+    }
+}

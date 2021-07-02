@@ -1,0 +1,10 @@
+package proje.hrms.Verification.concrete;
+
+import org.springframework.stereotype.Service;
+
+import proje.hrms.Verification.abstracts.MernisCheckService;
+
+@Service
+public class MernisCheckManager implements MernisCheckService{
+
+}

@@ -1,0 +1,11 @@
+package proje.hrms.core.Utilities.adapters.abstracts;
+
+public class SuccessResult extends Result {
+
+	public SuccessResult(String message) {
+		super(true,message);
+	}
+	
+	
+
+}

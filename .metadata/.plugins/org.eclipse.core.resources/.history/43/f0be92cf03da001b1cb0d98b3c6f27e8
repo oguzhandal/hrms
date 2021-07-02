@@ -1,0 +1,9 @@
+package proje.hrms.core;
+
+public class SuccessDataResult<T> extends DataResult {
+
+	public SuccessDataResult(T data, boolean success, String message) {
+		super(data, success, message);
+	}
+
+}

@@ -1,0 +1,15 @@
+package proje.hrms.business.abstracts;
+
+import java.util.List;
+
+import proje.hrms.core.DataResult;
+import proje.hrms.core.Result;
+import proje.hrms.entities.concretes.Employer;
+
+public interface EmployerService {
+	DataResult<List<Employer>> getAll();
+
+    DataResult<Employer> getByEmail(String email);
+
+    Result add(Employer employer);
+}

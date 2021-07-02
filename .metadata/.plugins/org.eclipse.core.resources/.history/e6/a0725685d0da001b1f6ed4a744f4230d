@@ -1,0 +1,77 @@
+package proje.hrms.business.concretes;
+
+import java.util.List;
+
+import proje.hrms.Verification.abstracts.EmailCheckService;
+import proje.hrms.Verification.abstracts.HrmsCheckService;
+import proje.hrms.business.abstracts.EmployerService;
+import proje.hrms.core.DataResult;
+import proje.hrms.core.ErrorResult;
+import proje.hrms.core.Result;
+import proje.hrms.core.SuccessDataResult;
+import proje.hrms.core.SuccessResult;
+import proje.hrms.core.Utulities.adapters.abstracts.VerificationCodeService;
+import proje.hrms.dataAccess.abstracts.EmployerDao;
+import proje.hrms.entities.concretes.Employer;
+
+public class EmployerManager implements EmployerService {
+	private EmployerDao employerDao;
+	private EmailCheckService emailCheckService;
+	private VerificationCodeService verificationCodeService;
+	private HrmsCheckService hrmsCheckService;
+
+	
+
+	public EmployerManager(EmployerDao employerDao, EmailCheckService emailCheckService,
+			VerificationCodeService verificationCodeService, HrmsCheckService checkService) {
+		super();
+		this.employerDao = employerDao;
+		this.emailCheckService = emailCheckService;
+		this.verificationCodeService = verificationCodeService;
+		this.hrmsCheckService = checkService;
+	}
+
+	
+
+	@Override
+	public DataResult<List<Employer>> getAll() {
+		return new SuccessDataResult<List<Employer>>(this.employerDao.findAll(), "iş verenler listelendi");
+	}
+
+	@Override
+	public DataResult<Employer> getByEmail(String email) {
+		return new SuccessDataResult<Employer>(this.employerDao.findByEmail(email));
+	}
+
+	@Override
+	public Result add(Employer employer) {
+		 if(employer.getCompanyName() == null || employer.getEmail() == null
+				 || employer.getPassword() == null || employer.getPhoneNumber() == null
+				 || employer.getWebAddress() == null) {
+			 return new ErrorResult("Tüm alanları doldurunuz!");
+		 }
+		 
+		 else if(!checkEmail(employer.getEmail())) {
+			 return new ErrorResult("Email kullanılmaktadır!");
+		 }
+		 
+		 else if(!this.emailCheckService.checkIfRealEmail(employer)) {
+			 return new ErrorResult("Email geçerli değil!");
+		 }
+		 
+		 else if(!this.hrmsCheckService.checkIfConfirmHrms(employer)) {
+			 return new ErrorResult("Hrms personeli onaylamadı!");
+		 }
+		 
+		 this.employerDao.save(employer);
+		 return new SuccessResult("Kayıt başarılı");
+	}
+
+	private boolean checkEmail(String email) {
+		if (this.employerDao.findByEmail(email) == null) {
+			return true;
+		}
+		return false;
+	}
+
+}

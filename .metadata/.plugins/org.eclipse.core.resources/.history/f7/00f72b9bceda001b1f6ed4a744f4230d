@@ -1,0 +1,5 @@
+package proje.hrms.Verification.abstracts;
+
+public interface MernisCheckService {
+
+}

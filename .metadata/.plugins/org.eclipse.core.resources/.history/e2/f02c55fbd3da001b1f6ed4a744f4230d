@@ -1,0 +1,7 @@
+package proje.hrms.verification0.abstracts;
+
+import proje.hrms.entities.concretes.User;
+
+public interface HrmsCheckService {
+	boolean checkIfConfirmHrms(User user);
+}

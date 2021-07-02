@@ -1,0 +1,43 @@
+package proje.hrms.business.concretes;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import proje.hrms.business.abstracts.EmployeeService;
+import proje.hrms.business.abstracts.UserService;
+import proje.hrms.core.DataResult;
+import proje.hrms.core.Result;
+import proje.hrms.core.SuccessDataResult;
+import proje.hrms.core.Utulities.adapters.abstracts.VerificationCodeService;
+import proje.hrms.dataAccess.abstracts.EmployeeDao;
+import proje.hrms.entities.concretes.Employee;
+
+public class EmployeeManager implements EmployeeService {
+
+	private EmployeeDao employeeDao;
+	private UserService userService;
+    private VerificationCodeService verificationCodeService;
+    
+	@Autowired
+	public EmployeeManager(EmployeeDao employeeDao,UserService userService,VerificationCodeService verificationCodeService) 
+	{
+		super();
+		this.employeeDao = employeeDao;
+		this.userService = userService;
+		this.verificationCodeService = verificationCodeService;
+	}
+	
+	@Override
+	public DataResult<List<Employee>> getAll() 
+	{
+		return new SuccessDataResult<List<Employee>>(employeeDao.findAll());
+	}
+
+	@Override
+	public Result add(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

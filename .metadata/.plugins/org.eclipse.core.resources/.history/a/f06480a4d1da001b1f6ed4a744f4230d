@@ -1,0 +1,31 @@
+package proje.hrms.api.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import proje.hrms.business.abstracts.UserService;
+import proje.hrms.core.DataResult;
+import proje.hrms.core.Result;
+import proje.hrms.entities.concretes.User;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/users")
+public class UsersController {
+	private UserService userService;
+
+	@Autowired
+	public UsersController(UserService userService) {
+		this.userService = userService;
+	}
+
+	@GetMapping("/getall")
+	public DataResult<List<User>> getAll() {
+		return this.userService.getAll();
+	}
+
+	@PostMapping("/add")
+	public Result add(@RequestBody User user) {
+		return this.userService.add(user);
+	}
+}

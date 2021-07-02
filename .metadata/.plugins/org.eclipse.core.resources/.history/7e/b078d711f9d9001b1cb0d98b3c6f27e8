@@ -1,0 +1,7 @@
+package proje.hrms.dataAccess.abstracts;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface JobTitleDao extends JpaRepository<JobTitleDao, Integer>{
+
+}

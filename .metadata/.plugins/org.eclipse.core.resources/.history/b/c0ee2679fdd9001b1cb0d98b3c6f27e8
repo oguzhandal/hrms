@@ -1,0 +1,22 @@
+package proje.hrms.business.concretes;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import proje.hrms.business.abstracts.JobTitleService;
+import proje.hrms.dataAccess.abstracts.JobTitleDao;
+import proje.hrms.entities.concretes.JobTitle;
+
+@Service
+public class JobTitleManager implements JobTitleService{
+private JobTitleDao JobTitleDao;
+
+	
+	@Override
+	public List<JobTitle> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

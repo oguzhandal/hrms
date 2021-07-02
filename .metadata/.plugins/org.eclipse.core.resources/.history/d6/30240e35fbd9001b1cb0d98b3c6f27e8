@@ -1,0 +1,15 @@
+package proje.hrms.core.Utilities.adapters.abstracts;
+
+public class ErrorResult extends Result {
+
+	public ErrorResult(){
+		super(false);
+		
+	}
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return super.getMessage();
+	}
+
+}
