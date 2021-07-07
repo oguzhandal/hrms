@@ -1,1 +1,156 @@
-{"lastUsed":1625189040149,"path":"C:\/proje\/JavaKamp\/Hrms","projectCount":1,"recentFiles":[{"path":"\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"HrmsCheckManager.java","lastModified":1625186762809,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete\/HrmsCheckManager.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/business\/concretes","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"CandidateManager.java","lastModified":1625188353734},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/business\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"EmployerService.java","lastModified":1625188633576,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/business\/abstracts\/EmployerService.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"EmailCheckService.java","lastModified":1625186633510,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts\/EmailCheckService.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"UserDao.java","lastModified":1625189084662,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts\/UserDao.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"ErrorDataResult.java","locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results\/ErrorDataResult.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"DemoApplication.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"JobTitleDao.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"Employer.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"EmailCheckManager.java","lastModified":1625186735762,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete\/EmailCheckManager.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"EmployerDao.java","lastModified":1625189005080,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts\/EmployerDao.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"DataResult.java","locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results\/DataResult.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/api\/controllers","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"EmployersController.java","lastModified":1625188050177},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/api\/controllers","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"CandidatesController.java","lastModified":1625188050177},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"User.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"MernisCheckService.java","lastModified":1625186646649,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts\/MernisCheckService.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"CandidateDao.java","lastModified":1625188298058,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts\/CandidateDao.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/business\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"CandidateService.java","lastModified":1625188187648},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"Employee.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/business\/concretes","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"EmployerManager.java","lastModified":1625189005245},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"MernisCheckManager.java","lastModified":1625186808922,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete\/MernisCheckManager.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"HrmsCheckService.java","lastModified":1625186628332,"locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts\/HrmsCheckService.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"SuccessDataResult.java","locationURI":"file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results\/SuccessDataResult.java"},{"path":"\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes","parentWorkspace":"C:\/proje\/JavaKamp\/Hrms","name":"Candidate.java","lastModified":1625188543501}]}
+{
+  "lastUsed": 1625438669817,
+  "path": "C:\/proje\/JavaKamp\/Hrms",
+  "projectCount": 1,
+  "recentFiles": [
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "HrmsCheckManager.java",
+      "lastModified": 1625186762809,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete\/HrmsCheckManager.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/api\/controllers",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "CandidatesController.java",
+      "lastModified": 1625188050177
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/business\/concretes",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "CandidateManager.java",
+      "lastModified": 1625188353734
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/business\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "EmployerService.java",
+      "lastModified": 1625188633576,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/business\/abstracts\/EmployerService.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "EmailCheckService.java",
+      "lastModified": 1625186633510,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts\/EmailCheckService.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "UserDao.java",
+      "lastModified": 1625189084662,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts\/UserDao.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "User.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "MernisCheckService.java",
+      "lastModified": 1625186646649,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts\/MernisCheckService.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "ErrorDataResult.java",
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results\/ErrorDataResult.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "DemoApplication.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "CandidateDao.java",
+      "lastModified": 1625188298058,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts\/CandidateDao.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "JobTitleDao.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "Employer.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "EmailCheckManager.java",
+      "lastModified": 1625186735762,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete\/EmailCheckManager.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/business\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "CandidateService.java",
+      "lastModified": 1625188187648
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "Employee.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/business\/concretes",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "EmployerManager.java",
+      "lastModified": 1625189005245
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "MernisCheckManager.java",
+      "lastModified": 1625186808922,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/concrete\/MernisCheckManager.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "EmployerDao.java",
+      "lastModified": 1625189005080,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/dataAccess\/abstracts\/EmployerDao.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "HrmsCheckService.java",
+      "lastModified": 1625186628332,
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/verification\/abstracts\/HrmsCheckService.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "SuccessDataResult.java",
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results\/SuccessDataResult.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "DataResult.java",
+      "locationURI": "file:\/C:\/Users\/dalog\/Desktop\/demo\/src\/main\/java\/proje\/hrms\/core\/utilities\/results\/DataResult.java"
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/api\/controllers",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "EmployersController.java",
+      "lastModified": 1625188050177
+    },
+    {
+      "path": "\/demo\/src\/main\/java\/proje\/hrms\/entities\/concretes",
+      "parentWorkspace": "C:\/proje\/JavaKamp\/Hrms",
+      "name": "Candidate.java",
+      "lastModified": 1625188543501
+    }
+  ]
+}

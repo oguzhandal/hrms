@@ -1,8 +1,9 @@
 package project.hrms.business.concretes;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import project.hrms.business.abstracts.EmployerService;
-import project.hrms.core.utulities.results.*;
+import project.hrms.core.utilities.results.*;
 import project.hrms.dataAccess.abstracts.EmployerDao;
 import project.hrms.entities.concretes.Employer;
 import project.hrms.verification.abstracts.EmailCheckService;
@@ -10,13 +11,14 @@ import project.hrms.verification.abstracts.HrmsCheckService;
 
 import java.util.List;
 
+@Service
 public class EmployerManager implements EmployerService {
     private EmployerDao employerDao;
     private EmailCheckService emailCheckService;
     private HrmsCheckService hrmsCheckService;
 
     @Autowired
-    public EmployerManager(EmployerDao employerDao,EmailCheckService emailCheckService,HrmsCheckService hrmsCheckService) {
+    public EmployerManager(EmployerDao employerDao, EmailCheckService emailCheckService, HrmsCheckService hrmsCheckService) {
         super();
         this.employerDao = employerDao;
         this.emailCheckService = emailCheckService;
@@ -25,39 +27,34 @@ public class EmployerManager implements EmployerService {
 
     @Override
     public DataResult<List<Employer>> getAll() {
+        return new SuccessDataResult<List<Employer>>(this.employerDao.findAll());
+    }
 
-        return new SuccessDataResult<List<Employer>>(this.employerDao.findAll(), "İş verenler listelendi");
+    @Override
+    public DataResult<List<Employer>> findByEmail(String email) {
+        return new SuccessDataResult<List<Employer>>(this.employerDao.findByEmail(email));
     }
 
     @Override
     public Result add(Employer employer) {
-
-        if(employer.getCompanyName() == null || employer.getEmail() == null
+        if (employer.getCompanyName() == null || employer.getEmail() == null
                 || employer.getPassword() == null || employer.getPhoneNumber() == null
                 || employer.getWebAddress() == null) {
             return new ErrorResult("Tüm alanları doldurunuz!");
-        }
-
-        else if(!checkEmail(employer.getEmail())) {
+        } else if (!checkEmail(employer.getEmail())) {
             return new ErrorResult("Email kullanılmaktadır!");
-        }
-
-        else if(!this.emailCheckService.checkIfRealEmail(employer)) {
+        } else if (!this.emailCheckService.checkIfRealEmail(employer)) {
             return new ErrorResult("Email geçerli değil!");
-        }
-
-        else if(!this.hrmsCheckService.checkIfConfirmHrms(employer)) {
+        } else if (!this.hrmsCheckService.checkIfConfirmHrms(employer)) {
             return new ErrorResult("Hrms personeli onaylamadı!");
         }
 
         this.employerDao.save(employer);
         return new SuccessResult("Kayıt başarılı");
-
-
     }
 
     private boolean checkEmail(String email) {
-        if(this.employerDao.getByEmail(email) == null) {
+        if (this.employerDao.findByEmail(email) == null) {
             return true;
         }
         return false;

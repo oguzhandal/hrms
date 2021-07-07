@@ -2,8 +2,8 @@
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import project.hrms.business.abstracts.CandidateService;
-import project.hrms.core.utulities.results.DataResult;
-import project.hrms.core.utulities.results.Result;
+import DataResult;
+import Result;
 import project.hrms.entities.concretes.Candidate;
 
 import java.util.List;

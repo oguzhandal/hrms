@@ -18,13 +18,10 @@
     <fullyQualifiedTypeName name="com.sun.tools.sjavac.pubapi.PubApi"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="proje.hrms.core.Utilities.adapters.abstracts.DataResult"/>
-    <fullyQualifiedTypeName name="proje.hrms.entities.concretes.User"/>
     <fullyQualifiedTypeName name="proje.hrms.entities.concretes.Employee"/>
-    <fullyQualifiedTypeName name="proje.hrms.entities.concretes.Candidate"/>
     <fullyQualifiedTypeName name="proje.hrms.core.Result"/>
     <fullyQualifiedTypeName name="proje.hrms.business.abstracts.JobTitleService"/>
     <fullyQualifiedTypeName name="proje.hrms.dataAccess.abstracts.JobTitleDao"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="proje.hrms.business.concretes.JobTitleManager"/>
     <fullyQualifiedTypeName name="proje.hrms.entities.concretes.JobTitle"/>
     <fullyQualifiedTypeName name="proje.hrms.business.abstracts.EmployerService"/>
@@ -37,7 +34,6 @@
     <fullyQualifiedTypeName name="proje.hrms.business.abstracts.CandidateService"/>
     <fullyQualifiedTypeName name="proje.hrms.business.abstracts.EmployeeService"/>
     <fullyQualifiedTypeName name="proje.hrms.api.controllers.EmployeesController"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
@@ -52,4 +48,15 @@
     <fullyQualifiedTypeName name="proje.hrms.core.Utulities.adapters.abstracts.VerificationCodeService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="proje.hrms.core.SuccessDataResult"/>
+    <fullyQualifiedTypeName name="proje.hrms.entities.concretes.User"/>
+    <fullyQualifiedTypeName name="proje.hrms.core.Utulities.adapters.abstracts.MailCheckService"/>
+    <fullyQualifiedTypeName name="proje.hrms.Verification.abstracts.HrmsCheckService"/>
+    <fullyQualifiedTypeName name="proje.hrms.Verification.abstracts.EmailCheckService"/>
+    <fullyQualifiedTypeName name="proje.hrms.dataAccess.abstracts.CandidateDao"/>
+    <fullyQualifiedTypeName name="proje.hrms.Verification.abstracts.MernisCheckService"/>
+    <fullyQualifiedTypeName name="proje.hrms.core.utilities.results.DataResult"/>
+    <fullyQualifiedTypeName name="proje.hrms.core.utilities.results.Result"/>
+    <fullyQualifiedTypeName name="proje.hrms.entities.concretes.Candidate"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
