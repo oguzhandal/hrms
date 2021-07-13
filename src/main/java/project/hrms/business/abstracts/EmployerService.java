@@ -9,7 +9,8 @@ import java.util.List;
 public interface EmployerService {
     DataResult<List<Employer>> getAll();
 
-    DataResult<List<Employer>> findByEmail(String email);
-
     Result add(Employer employer);
+
+    //   DataResult<List<Employer>> findByEmail(String email);
+
 }

@@ -12,14 +12,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@PrimaryKeyJoinColumn(name = "user_id")
 @Table(name = "employers")
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdvertisements"})
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdverts"})
 public class Employer extends User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int id;
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Column(name = "id")
+    //private int id;
 
     @Column(name = "company_name")
     private String companyName;
@@ -30,6 +31,9 @@ public class Employer extends User {
     @Column(name = "phone_number")
     private String phoneNumber;
 
+    @Column(name = "is_verified", columnDefinition = "boolean default false")
+    private boolean isVerified = false;
+
     @OneToMany(mappedBy = "employer")
-    private List<JobAdvertisement> jobAdvertisements;
+    private List<JobAdvert> jobAdverts;
 }

@@ -1,10 +1,11 @@
 package project.hrms.api.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import project.hrms.business.abstracts.CityService;
 import project.hrms.core.utilities.results.DataResult;
-import project.hrms.core.utilities.results.Result;
 import project.hrms.entities.concretes.City;
 
 import java.util.List;
@@ -25,9 +26,5 @@ public class CitiesController {
         return this.cityService.getAll();
     }
 
-    @PostMapping("add")
-    public Result add(@RequestBody City city) {
-        return this.cityService.add(city);
 
-    }
 }

@@ -24,12 +24,6 @@ public class EmployersController {
         return this.employerService.getAll();
     }
 
-    @GetMapping("findByEmail")
-    public DataResult<List<Employer>> findByEmail(@RequestBody String email) {
-        return this.employerService.findByEmail(email);
-    }
-
-
     @PostMapping("add")
     public Result add(@RequestBody Employer employer) {
         return this.employerService.add(employer);

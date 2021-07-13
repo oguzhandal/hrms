@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import project.hrms.entities.concretes.User;
 
 public interface UserDao extends JpaRepository<User, Integer> {
-    User findByEmail(String email);
+    User findUserByEmail(String email);
+
+    User getById(int id);
 
 }

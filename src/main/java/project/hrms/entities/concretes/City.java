@@ -1,29 +1,31 @@
 package project.hrms.entities.concretes;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 @Data
 @Entity
-@Table(name = "cities")
-@AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdvertisements"})
-public class City {
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "jobAdverts"})
+@Table(name = "cities")
+public class City extends Base {
 
-    @Id
-    @GeneratedValue
-    @Column(name = "city_id")
-    private int cityId;
-
-    @Column(name = "city_name")
-    private String cityName;
+    @Column(name = "name")
+    private String name;
 
     @OneToMany(mappedBy = "city")
-    private List<JobAdvertisement> jobAdvertisements;
+    private List<JobAdvert> jobAdverts;
+
+    public City(String name, List<JobAdvert> jobAdverts) {
+        super();
+        this.jobAdverts = jobAdverts;
+        this.name = name;
+    }
 }
