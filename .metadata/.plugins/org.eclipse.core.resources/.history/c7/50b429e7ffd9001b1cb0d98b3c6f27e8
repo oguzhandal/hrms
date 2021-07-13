@@ -6,7 +6,7 @@ import project.hrms.business.abstracts.CandidateService;
 import project.hrms.core.*;
 import project.hrms.core.utulities.adapters.abstracts.MailCheckService;
 import project.hrms.core.utulities.adapters.abstracts.VerificationCodeService;
-import project.hrms.dataAccess.abstracts.JobSeekerDao;
+import project.hrms.dataAccess.abstracts.CandidateDao;
 import project.hrms.entities.concretes.Candidate;
 
 import java.util.List;
