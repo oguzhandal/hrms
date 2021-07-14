@@ -1,2 +1,2 @@
 # Hrms
-İnsan Kaynakları Yönetim Sistemi projesi Banck-End kodları.
+İnsan Kaynakları Yönetim Sistemi projesi Back-End kodları.
